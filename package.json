@@ -1,0 +1,33 @@
+{
+  "name": "hardhat-project",
+  "license": "MIT",
+  "version": "1.0.0",
+  "author": "Daniel Liu",
+  "description": "hardhat project",
+  "main": "",
+  "keywords": [
+    "BlockChain",
+    "Ethereum",
+    "DeFi",
+    "Smart contracts",
+    "Solidity",
+    "ERC20",
+    "Hardhat"
+  ],
+  "homepage": "https://github.com/gzliudan/hardhat-project#README",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gzliudan/hardhat-project"
+  },
+  "bugs": {
+    "url": "https://github.com/gzliudan/hardhat-project/issues",
+    "email": "liudaniel@qq.com"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.6.0",
+    "yarn": ">=1.22.0"
+  },
+  "devDependencies": {
+  }
+}
