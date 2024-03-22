@@ -1,22 +1,25 @@
-// SPDX-License-Identifier: UNLICENSED
-pragma solidity ^0.8.24;
+// SPDX-License-Identifier: MIT
+
+pragma solidity ^0.8.23;
 
 // Uncomment this line to use console.log
 // import "hardhat/console.sol";
 
 contract Lock {
-    uint public unlockTime;
+    error EarlyTime(uint256 time);
+    error NotOwner(address who);
+
+    event Withdrawal(uint256 amount, uint256 when);
+
+    uint256 public unlockTime;
     address payable public owner;
 
-    event Withdrawal(uint amount, uint when);
+    constructor(uint256 unlockTime_) payable {
+        if (block.timestamp >= unlockTime_) {
+            revert EarlyTime(unlockTime_);
+        }
 
-    constructor(uint _unlockTime) payable {
-        require(
-            block.timestamp < _unlockTime,
-            "Unlock time should be in the future"
-        );
-
-        unlockTime = _unlockTime;
+        unlockTime = unlockTime_;
         owner = payable(msg.sender);
     }
 
@@ -24,8 +27,13 @@ contract Lock {
         // Uncomment this line, and the import of "hardhat/console.sol", to print a log in your terminal
         // console.log("Unlock time is %o and block timestamp is %o", unlockTime, block.timestamp);
 
-        require(block.timestamp >= unlockTime, "You can't withdraw yet");
-        require(msg.sender == owner, "You aren't the owner");
+        if (block.timestamp < unlockTime) {
+            revert EarlyTime(block.timestamp);
+        }
+
+        if (msg.sender != owner) {
+            revert NotOwner(msg.sender);
+        }
 
         emit Withdrawal(address(this).balance, block.timestamp);
 
