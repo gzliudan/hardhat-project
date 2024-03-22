@@ -1,0 +1,88 @@
+{
+  "chain_name": "local",
+  "lock": {
+    "name": "Lock",
+    "args": [
+      1743073643
+    ],
+    "address": "0x680cB9aDB660E82FC890bBFE65CDA14d2e00031d",
+    "block": 52,
+    "hash": "0x29614b3c1d005b646ff14cdb79a625a631854de9c73c6a4d270e8e7a298a7bfe",
+    "verified": false
+  },
+  "mh_token": {
+    "name": "MhToken",
+    "args": [],
+    "address": "0xA651ea753414C6a234Bcd0F4dEFD4C9aF6914715",
+    "block": 53,
+    "hash": "0x973985df02ae7117f0b31783f7cc09e3c91ed8a289aa725319dfba84f69e13bd",
+    "verified": false
+  },
+  "test_coin": {
+    "name": "TestCoin",
+    "args": [
+      "Test Coin",
+      "TCT"
+    ],
+    "address": "0x671556240D4Ae98935A0ba347f0eb224f8084893",
+    "block": 54,
+    "hash": "0x2c99778509bd997c35665a921310ad92e52faa54c11c809b33297900a561b18e",
+    "verified": false
+  },
+  "base_fee": {
+    "name": "Basefee",
+    "args": [],
+    "address": "0x462a48B5C32ADE9513d4414dCb2B48e19B581272",
+    "block": 55,
+    "hash": "0x0fabe091e5870f446dfd329a9da1fc826e5f548622bd473c196a245f80537651",
+    "verified": false
+  },
+  "prevrandao": {
+    "name": "Prevrandao",
+    "args": [],
+    "address": "0xD6beF9204D79C04ff1a8c06CffF96398e9e533Df",
+    "block": 56,
+    "hash": "0x75ddc2802088d4a9c28345106220e153508811ce57e133be4b6d267b7e6a8d0d",
+    "verified": false
+  },
+  "push0": {
+    "name": "Push0",
+    "args": [],
+    "address": "0x9096BD42138a0bFe42f0C2e4606B825C2f0f7Caf",
+    "block": 57,
+    "hash": "0x0594631c647f003c2e23f306fdeb618bcd14c7ca60545d028a5504978aded94c",
+    "verified": false
+  },
+  "blob_base_fee": {
+    "name": "BlobBaseFee",
+    "args": [],
+    "address": "0x00377EAeB2c14ea1cB63B0014215128381Fed450",
+    "block": 58,
+    "hash": "0x1755b5a63ed3b7ae73b355995ef834408c2393252f2d5b271cd4805e4a52c3b3",
+    "verified": false
+  },
+  "custom_error": {
+    "name": "CustomError",
+    "args": [],
+    "address": "0xcfCdf0f50B2A1da5B7e585871a22F4232C375929",
+    "block": 59,
+    "hash": "0xf97a1b730976d8f21724eddcd4b4baa1ed8002187747d7cae042199545fe1866",
+    "verified": false
+  },
+  "mcopy": {
+    "name": "MCopy",
+    "args": [],
+    "address": "0x48609f5a244D47Fda0DA0433EcB8A0CFC5Bed7b4",
+    "block": 60,
+    "hash": "0xe6bc7c14a2567dd191d094145dbdc2def08e70d21b71c2c6454ba42b6569b625",
+    "verified": false
+  },
+  "transient_storage": {
+    "name": "TransientStorage",
+    "args": [],
+    "address": "0x38c7a8A5880cA32978f7a515576e6c29b7d96E3d",
+    "block": 61,
+    "hash": "0x55a235bbab923c95dce81d8324a8b670fc9873a22830502b0da5b17c3119c2dc",
+    "verified": false
+  }
+}

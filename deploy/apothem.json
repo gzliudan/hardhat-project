@@ -1,0 +1,33 @@
+{
+  "chain_name": "apothem",
+  "chain_id": 51,
+  "lock": {
+    "name": "Lock",
+    "args": [
+      1742774916
+    ],
+    "address": "0x66675A34C17322363C0a7c8d61496A66561Dc90e",
+    "block": 73025682,
+    "hash": "0x52c4c55fe0b31167f01c649b62c9f7a684da4431bfdbc7f8ef1057a7c1ed5e76",
+    "verified": false
+  },
+  "mh_token": {
+    "name": "MhToken",
+    "args": [],
+    "address": "0x84f3ED01f1585618b8a51b995Ec0078C16C77167",
+    "block": 73025697,
+    "hash": "0xc7511f120c5104fcff420ee305e664b75f445e18ca784137fcd5e6d1ca411f1c",
+    "verified": false
+  },
+  "test_coin": {
+    "name": "TestCoin",
+    "args": [
+      "Test Coin",
+      "TCT"
+    ],
+    "address": "0xf540C47643D8BD53D2E0ee8aB129DD57228570Af",
+    "block": 73025714,
+    "hash": "0xf0957ef6f0ccb25368c2be3dd9f7de3e9eb38c1a765f107bffa70820b9bc4839",
+    "verified": false
+  }
+}

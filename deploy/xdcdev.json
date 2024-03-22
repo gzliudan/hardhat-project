@@ -1,0 +1,89 @@
+{
+  "chain_name": "xdcdev",
+  "chain_id": 551,
+  "lock": {
+    "name": "Lock",
+    "args": [
+      1742889065
+    ],
+    "address": "0x2c7928180Cdc5556a6a9a3DfaaD93b5eAB0f7854",
+    "block": 2101800,
+    "hash": "0xb6f3dcbdc5b2e511878f6860576680810fdb5eccb035b623d83696716e60326b",
+    "verified": false
+  },
+  "mh_token": {
+    "name": "MhToken",
+    "args": [],
+    "address": "0xfFd84D98Ee510e1755ecd4960A00a5CD8af1b11B",
+    "block": 2101801,
+    "hash": "0x4597292abbab75659d68cc748a50adb871a97dbed230777a1b901e0c1f2b4c10",
+    "verified": false
+  },
+  "test_coin": {
+    "name": "TestCoin",
+    "args": [
+      "Test Coin",
+      "TCT"
+    ],
+    "address": "0xD421DC434D5Ccf14a8bA71d4221F3496F9CC4c0C",
+    "block": 2101804,
+    "hash": "0x49949c7a506b9b5b40b8ab79fff9f09ce46877491871052dd817dffa8e22217d",
+    "verified": false
+  },
+  "base_fee": {
+    "name": "Basefee",
+    "args": [],
+    "address": "0xef143b9941E8Cd2acDaa82BdFACdAC9EFe0D2BAe",
+    "block": 2101805,
+    "hash": "0xd205881fc264e4d1d56c2dc32c6fcca9aeb16428bd2beda9d2ba4598fef80460",
+    "verified": false
+  },
+  "prevrandao": {
+    "name": "Prevrandao",
+    "args": [],
+    "address": "0xf42dF58c35dd81Fa0233F3FdE6C021779fA8D82C",
+    "block": 2101806,
+    "hash": "0x5c79eed5aec6cb5b460a7e84f062b8fd7973c36b436ccdc88003cd8b2a2f378b",
+    "verified": false
+  },
+  "push0": {
+    "name": "Push0",
+    "args": [],
+    "address": "0x887405ac1337C485ADa869EBe23E118A8c31976E",
+    "block": 2101807,
+    "hash": "0x00fe8aa0ecfda2b7dcc6d697519295c8a2d5f6571ed5fedb967601eba7308af2",
+    "verified": false
+  },
+  "blob_base_fee": {
+    "name": "BlobBaseFee",
+    "args": [],
+    "address": "0x9CF7E1bF9BBdBea080E6C27DC20869AD035997bd",
+    "block": 2101810,
+    "hash": "0x8be9f26c74dd7f73e250cbb3b3fe162eb03912ca136d83f2113eef9de25354ff",
+    "verified": false
+  },
+  "custom_error": {
+    "name": "CustomError",
+    "args": [],
+    "address": "0x935DFe951d789c9eD6303250a9A1818A85d3dC0e",
+    "block": 2101811,
+    "hash": "0x1e964074a8033f674a1ed79e177206ef02326f98e928c66138d36827ca4343f1",
+    "verified": false
+  },
+  "mcopy": {
+    "name": "MCopy",
+    "args": [],
+    "address": "0x9672c3B4B4C7A0EF9b9c1000484d2EC62d4CaACF",
+    "block": 2101812,
+    "hash": "0xc1fba6f847e2db6cef7a860b672e0b99e5311ad20998cfb94573040af7dc2b3a",
+    "verified": false
+  },
+  "transient_storage": {
+    "name": "TransientStorage",
+    "args": [],
+    "address": "0xa6d36784d4Ff43eFe50D47707382ADf309a2D9B1",
+    "block": 2101814,
+    "hash": "0x4384d1e491422ce2e7f636a8c7a71f75d364089772b37a482883c7a560a2857f",
+    "verified": false
+  }
+}
