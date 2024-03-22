@@ -28,6 +28,28 @@
     "npm": ">=8.6.0",
     "yarn": ">=1.22.0"
   },
+  "scripts": {
+    "clean": "rm -rf coverage.json coverage cache artifacts",
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "make": "yarn clean && yarn compile",
+    "deploy:local": "hardhat run --network local scripts/deploy-all.js",
+    "deploy:dev": "hardhat run --network dev scripts/deploy-all.js",
+    "deploy:xdcdev": "hardhat run --network xdcdev scripts/deploy-all.js",
+    "deploy:apothem": "hardhat run --network apothem scripts/deploy-all.js",
+    "deploy:xinfin": "hardhat run --network xinfin scripts/deploy-all.js",
+    "deploy:mumbai": "hardhat run --network mumbai scripts/deploy-all.js",
+    "deploy:polygon": "hardhat run --network polygon scripts/deploy-all.js",
+    "deploy:goerli": "hardhat run --network goerli scripts/deploy-all.js",
+    "deploy:mainnet": "hardhat run --network mainnet scripts/deploy-all.js",
+    "verify:xdcdev": "hardhat run --network xdcdev scripts/verify-all.js",
+    "verify:apothem": "hardhat run --network apothem scripts/verify-all.js",
+    "verify:xinfin": "hardhat run --network xinfin scripts/verify-all.js",
+    "verify:mumbai": "hardhat run --network mumbai scripts/verify-all.js",
+    "verify:polygon": "hardhat run --network polygon scripts/verify-all.js",
+    "verify:goerli": "hardhat run --network goerli scripts/verify-all.js",
+    "verify:mainnet": "hardhat run --network mainnet scripts/verify-all.js"
+  },
   "devDependencies": {
     "@nomicfoundation/hardhat-chai-matchers": "^2.0.6",
     "@nomicfoundation/hardhat-ethers": "^3.0.5",
