@@ -14,6 +14,7 @@ const {
   MUMBAI_RPC,
   POLYGON_RPC,
   GOERLI_RPC,
+  SEPOLIA_RPC,
   MAINNET_RPC,
 
   ETHERSCAN_API_KEY,
@@ -29,6 +30,7 @@ const XINFIN_RPC_URL = XINFIN_RPC || 'https://earpc.xinfin.network';
 const MUMBAI_RPC_URL = MUMBAI_RPC || 'https://rpc.ankr.com/polygon_mumbai';
 const POLYGON_RPC_URL = POLYGON_RPC || 'https://rpc.ankr.com/polygon';
 const GOERLI_RPC_URL = GOERLI_RPC || `https://goerli.infura.io/v3/${INFURA_API_KEY}`;
+const SEPOLIA_RPC_URL = SEPOLIA_RPC || 'https://rpc.sepolia.org';
 const MAINNET_RPC_URL = MAINNET_RPC || `https://mainnet.infura.io/v3/${INFURA_API_KEY}`;
 
 function getPrivateKey() {
@@ -75,47 +77,52 @@ module.exports = {
       loggingEnabled: false,
     },
     local: {
-      url: LOCAL_RPC_URL,
       accounts: [DEPLOYER_ACCOUNT],
+      url: LOCAL_RPC_URL,
     },
     dev: {
-      url: DEV_RPC_URL,
       accounts: [DEPLOYER_ACCOUNT],
+      url: DEV_RPC_URL,
     },
     xdcdev: {
-      url: 'https://devnetstats.apothem.network/devnet',
-      chainId: 551,
       accounts: [DEPLOYER_ACCOUNT],
+      chainId: 551,
+      url: 'https://devnetstats.apothem.network/devnet',
     },
     apothem: {
-      url: APOTHEM_RPC_URL,
-      chainId: 51,
       accounts: [DEPLOYER_ACCOUNT],
+      chainId: 51,
+      url: APOTHEM_RPC_URL,
     },
     xinfin: {
-      url: XINFIN_RPC_URL,
-      chainId: 50,
       accounts: [DEPLOYER_ACCOUNT],
+      chainId: 50,
+      url: XINFIN_RPC_URL,
     },
     mumbai: {
-      url: MUMBAI_RPC_URL,
-      chainId: 80001,
       accounts: [DEPLOYER_ACCOUNT],
+      chainId: 80001,
+      url: MUMBAI_RPC_URL,
     },
     polygon: {
-      url: POLYGON_RPC_URL,
-      chainId: 137,
       accounts: [DEPLOYER_ACCOUNT],
+      chainId: 137,
+      url: POLYGON_RPC_URL,
     },
     goerli: {
-      url: GOERLI_RPC_URL,
-      chainId: 5,
       accounts: [DEPLOYER_ACCOUNT],
+      chainId: 5,
+      url: GOERLI_RPC_URL,
+    },
+    sepolia: {
+      accounts: [DEPLOYER_ACCOUNT],
+      chainId: 11155111,
+      url: SEPOLIA_RPC_URL,
     },
     mainnet: {
-      url: MAINNET_RPC_URL,
-      chainId: 1,
       accounts: [DEPLOYER_ACCOUNT],
+      chainId: 1,
+      url: MAINNET_RPC_URL,
     },
   },
   solidity: {
@@ -138,6 +145,7 @@ module.exports = {
       polygonMumbai: POLYGONSCAN_API_KEY,
       polygon: POLYGONSCAN_API_KEY,
       goerli: ETHERSCAN_API_KEY,
+      sepolia: ETHERSCAN_API_KEY,
       mainnet: ETHERSCAN_API_KEY,
     },
     customChains: [
