@@ -156,6 +156,7 @@ module.exports = {
   },
   etherscan: {
     apiKey: {
+      xdcdev: XDC_API_KEY,
       apothem: XDC_API_KEY,
       xinfin: XDC_API_KEY,
       polygonMumbai: POLYGONSCAN_API_KEY,
@@ -166,19 +167,27 @@ module.exports = {
     },
     customChains: [
       {
-        network: 'apothem',
-        chainId: 51,
+        chainId: 551,
+        network: 'xdcdev',
         urls: {
-          apiURL: 'https://api-apothem.blocksscan.io/api',
-          browserURL: 'https://explorer.apothem.network',
+          apiURL: 'https://devnetapi.blocksscan.io/api',
+          browserURL: 'https://devnet.blocksscan.io/',
         },
       },
       {
-        network: 'xinfin',
-        chainId: 50,
+        chainId: 51,
+        network: 'apothem',
         urls: {
-          apiURL: 'https://api-xdc.blocksscan.io/api',
-          browserURL: 'https://explorer.xinfin.network',
+          apiURL: 'https://api-apothem.xdcscan.io/api',
+          browserURL: 'https://apothem.xdcscan.io/',
+        },
+      },
+      {
+        chainId: 50,
+        network: 'xinfin',
+        urls: {
+          apiURL: 'https://bapi.blocksscan.io/api',
+          browserURL: 'https://beta.blocksscan.io/',
         },
       },
     ],
