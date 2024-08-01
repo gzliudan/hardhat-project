@@ -76,10 +76,14 @@ async function deployContract(name, key, args, options) {
 
 async function verifyContract(key, args) {
   const { directory, filename, contracts } = getDeployedContracts(CHAIN_NAME, CHAIN_ID);
-  const { address, name, verified } = contracts[key];
+  const { address, name, verified, fqcn } = contracts[key];
 
   if (!address) {
-    throw new Error(`[${getDataTime()}] FAIL: must set ${key} in file ${filename} !`);
+    throw new Error(`[${getDataTime()}] FAIL: miss key "${key}" in the file ${filename} !`);
+  }
+
+  if (!name) {
+    throw new Error(`[${getDataTime()}] FAIL: miss key "name" in the file ${filename} !`);
   }
 
   if (verified) {
@@ -96,12 +100,14 @@ async function verifyContract(key, args) {
   }
 
   console.log(`[${getDataTime()}] DO: verify ${key}(${name}) at ${address}, args = ${JSON.stringify(args)}`);
+  const sourceName = fqcn || (await hre.artifacts.readArtifact(name))?.sourceName;
 
   try {
     await hre.run('verify:verify', {
       network: CHAIN_NAME,
       address,
       constructorArguments: args,
+      contract: `${sourceName}:${name}`,
     });
 
     contracts[key].verified = true;
