@@ -30,6 +30,11 @@ function getDeployedContracts() {
   return { directory: DEPLOY_DIR, filename, contracts };
 }
 
+function getContractAddressByKey(key) {
+  const { contracts } = getDeployedContracts();
+  return contracts[key]?.address;
+}
+
 function writeDeployedContracts(directory, filename, contracts) {
   fs.mkdirSync(directory, { recursive: true });
   fs.writeFileSync(filename, JSON.stringify(contracts, null, 2));
@@ -75,7 +80,7 @@ async function deployContract(name, key, args, options) {
 }
 
 async function verifyContract(key, args) {
-  const { directory, filename, contracts } = getDeployedContracts(CHAIN_NAME, CHAIN_ID);
+  const { directory, filename, contracts } = getDeployedContracts();
   const { address, name, verified, fqcn } = contracts[key];
 
   if (!address) {
@@ -125,6 +130,7 @@ module.exports = {
   CHAIN_ID,
   deployContract,
   getDataTime,
+  getContractAddressByKey,
   getDeployedContracts,
   writeDeployedContracts,
   verifyContract,
