@@ -1,0 +1,34 @@
+{
+  "chain_name": "apothem",
+  "chain_id": 51,
+  "reward_point": {
+    "name": "RewardPoint",
+    "args": [],
+    "address": "0x6996Ff3BA16333bA4760984e10332Fe985794433",
+    "block": 65978955,
+    "hash": "0xc1943ebe206fbcab6334c8de8bb5a87cdaea842c828c427678138629359d6218",
+    "verified": true
+  },
+  "reward_point_beacon": {
+    "name": "RewardPointBeacon",
+    "args": [
+      "0x6996Ff3BA16333bA4760984e10332Fe985794433",
+      "0xD4CE02705041F04135f1949Bc835c1Fe0885513c"
+    ],
+    "address": "0xc10Ac1C6b3867fe21bAa8597B32824Bd36644e31",
+    "block": 65978957,
+    "hash": "0xdb38183461c040dfbcc8eb2826dea6e44c738e5c696567b0aafe0298926c3d61",
+    "verified": true
+  },
+  "reward_point_factory": {
+    "name": "RewardPointFactory",
+    "args": [
+      "0xc10Ac1C6b3867fe21bAa8597B32824Bd36644e31",
+      "0xD4CE02705041F04135f1949Bc835c1Fe0885513c"
+    ],
+    "address": "0x46D5F2737737D732A94Aa217F7F40af634Fc5f03",
+    "block": 65978959,
+    "hash": "0xb7b360db695c626c2b7397ae473d95c912809939693b553228e51842c3c53851",
+    "verified": true
+  }
+}

@@ -25,7 +25,7 @@ const {
 
 const LOCAL_RPC_URL = LOCAL_RPC || 'http://localhost:8545';
 const DEV_RPC_URL = DEV_RPC || 'http://localhost:8545';
-const APOTHEM_RPC_URL = APOTHEM_RPC || 'https://earpc.apothem.network';
+const APOTHEM_RPC_URL = APOTHEM_RPC || 'https://erpc.apothem.network';
 const XINFIN_RPC_URL = XINFIN_RPC || 'https://earpc.xinfin.network';
 const MUMBAI_RPC_URL = MUMBAI_RPC || 'https://rpc.ankr.com/polygon_mumbai';
 const POLYGON_RPC_URL = POLYGON_RPC || 'https://rpc.ankr.com/polygon';
