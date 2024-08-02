@@ -9,6 +9,11 @@ const CHAIN_NAME = hre.network.name;
 const CHAIN_ID = hre.network.config.chainId;
 const RPC = hre.network.config.url;
 
+// Converts the ether(decimal string) to a BigInt, using 18 decimal places.
+function etherToWei(quantity) {
+  return hre.ethers.parseEther(`${quantity}`);
+}
+
 function getDataTime() {
   return dayjs().format('YYYY-MM-DD HH:mm:ss');
 }
@@ -126,13 +131,15 @@ async function verifyContract(key, args) {
 }
 
 module.exports = {
-  CHAIN_NAME,
   CHAIN_ID,
+  CHAIN_NAME,
   RPC,
+
   deployContract,
-  getDataTime,
+  etherToWei,
   getContractAddressByKey,
+  getDataTime,
   getDeployedContracts,
-  writeDeployedContracts,
   verifyContract,
+  writeDeployedContracts,
 };
