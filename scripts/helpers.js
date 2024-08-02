@@ -7,6 +7,7 @@ const hre = require('hardhat');
 const DEPLOY_DIR = './deploy';
 const CHAIN_NAME = hre.network.name;
 const CHAIN_ID = hre.network.config.chainId;
+const RPC = hre.network.config.url;
 
 function getDataTime() {
   return dayjs().format('YYYY-MM-DD HH:mm:ss');
@@ -127,6 +128,7 @@ async function verifyContract(key, args) {
 module.exports = {
   CHAIN_NAME,
   CHAIN_ID,
+  RPC,
   deployContract,
   getDataTime,
   getContractAddressByKey,
