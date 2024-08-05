@@ -11,6 +11,7 @@ const {
   DEV_RPC,
   APOTHEM_RPC,
   XINFIN_RPC,
+  AMOY_RPC,
   MUMBAI_RPC,
   POLYGON_RPC,
   GOERLI_RPC,
@@ -28,6 +29,7 @@ const DEV_RPC_URL = DEV_RPC || 'http://localhost:8545';
 const APOTHEM_RPC_URL = APOTHEM_RPC || 'https://earpc.apothem.network';
 const XINFIN_RPC_URL = XINFIN_RPC || 'https://earpc.xinfin.network';
 const MUMBAI_RPC_URL = MUMBAI_RPC || 'https://rpc.ankr.com/polygon_mumbai';
+const AMOY_RPC_URL = AMOY_RPC || 'https://rpc-amoy.polygon.technology';
 const POLYGON_RPC_URL = POLYGON_RPC || 'https://rpc.ankr.com/polygon';
 const GOERLI_RPC_URL = GOERLI_RPC || `https://goerli.infura.io/v3/${INFURA_API_KEY}`;
 const SEPOLIA_RPC_URL = SEPOLIA_RPC || 'https://rpc.sepolia.org';
@@ -107,6 +109,11 @@ module.exports = {
       chainId: 80001,
       url: MUMBAI_RPC_URL,
     },
+    amoy: {
+      accounts: [DEPLOYER_ACCOUNT],
+      chainId: 80002,
+      url: AMOY_RPC_URL,
+    },
     polygon: {
       accounts: [DEPLOYER_ACCOUNT],
       chainId: 137,
@@ -158,6 +165,7 @@ module.exports = {
       apothem: XDC_API_KEY,
       xinfin: XDC_API_KEY,
       polygonMumbai: POLYGONSCAN_API_KEY,
+      polygonAmoy: POLYGONSCAN_API_KEY,
       polygon: POLYGONSCAN_API_KEY,
       goerli: ETHERSCAN_API_KEY,
       sepolia: ETHERSCAN_API_KEY,
