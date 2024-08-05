@@ -37,6 +37,7 @@
     "deploy:dev": "hardhat run --network dev scripts/deploy-all.js",
     "deploy:xdcdev": "hardhat run --network xdcdev scripts/deploy-all.js",
     "deploy:apothem": "hardhat run --network apothem scripts/deploy-all.js",
+    "deploy:amoy": "hardhat run --network amoy scripts/deploy-all.js",
     "deploy:xinfin": "hardhat run --network xinfin scripts/deploy-all.js",
     "deploy:mumbai": "hardhat run --network mumbai scripts/deploy-all.js",
     "deploy:polygon": "hardhat run --network polygon scripts/deploy-all.js",
@@ -46,6 +47,7 @@
     "verify:apothem": "hardhat run --network apothem scripts/verify-all.js",
     "verify:xinfin": "hardhat run --network xinfin scripts/verify-all.js",
     "verify:mumbai": "hardhat run --network mumbai scripts/verify-all.js",
+    "verify:amoy": "hardhat run --network amoy scripts/verify-all.js",
     "verify:polygon": "hardhat run --network polygon scripts/verify-all.js",
     "verify:goerli": "hardhat run --network goerli scripts/verify-all.js",
     "verify:mainnet": "hardhat run --network mainnet scripts/verify-all.js"
