@@ -34,7 +34,7 @@
     "test": "hardhat test",
     "test:local": "hardhat test --network local test/v0.8.23/*.js test/v0.8.28/*.js",
     "test:xdcdev": "hardhat test --network xdcdev test/v0.8.23/*.js test/v0.8.28/*.js",
-    "test:apothem": "hardhat test --network apothem test/v0.8.23/*.js",
+    "test:apothem": "hardhat test --network apothem test/v0.8.23/*.js test/v0.8.28/*.js",
     "test:xinfin": "hardhat test --network xinfin test/v0.8.23/*.js",
     "make": "yarn clean && yarn compile",
     "deploy:local": "hardhat run --network local scripts/deploy-all.js",
