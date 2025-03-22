@@ -1,13 +1,45 @@
-# Sample Hardhat Project
+# Hardhat Project
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a Hardhat Ignition module that deploys that contract.
+This project demonstrates how to use Hardhat.
 
-Try running some of the following tasks:
+## Install
 
 ```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat ignition deploy ./ignition/modules/Lock.js
+git clone https://github.com/gzliudan/hardhat-project
+cd hardhat-project
+yarn
+yarn clean
+cp sample.env .env
+# set DEPLOYER_PRIVATE_KEY in .env
+vi .env
+```
+
+## Test
+
+```shell
+yarn test
+yarn test:local
+yarn test:xdcdev
+yarn test:apothem
+```
+
+## Deploy
+
+deploy contracts according to your network:
+
+```shell
+yarn deploy:local
+yarn deploy:xdcdev
+yarn deploy:apothem
+yarn deploy:xinfin
+```
+
+## Verify
+
+verify contracts according to your network:
+
+```shell
+yarn verify:xdcdev
+yarn verify:apothem
+yarn verify:xinfin
 ```
