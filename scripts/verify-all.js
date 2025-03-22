@@ -10,6 +10,13 @@ async function main() {
   await verifyContract('lock');
   await verifyContract('mh_token');
   await verifyContract('test_coin');
+  await deployContract('base_fee');
+  await deployContract('prevrandao');
+  await deployContract('push0');
+  await deployContract('blob_base_fee');
+  await deployContract('custom_error');
+  await deployContract('mcopy');
+  await deployContract('transient_storage');
 }
 
 main().catch((error) => {

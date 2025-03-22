@@ -14,6 +14,13 @@ async function main() {
   await deployContract('Lock', 'lock', [unlockTime], { value });
   await deployContract('MhToken', 'mh_token');
   await deployContract('TestCoin', 'test_coin', ['Test Coin', 'TCT']);
+  await deployContract('BaseFee', 'base_fee');
+  await deployContract('Prevrandao', 'prevrandao');
+  await deployContract('Push0', 'push0');
+  await deployContract('BlobBaseFee', 'blob_base_fee');
+  await deployContract('CustomError', 'custom_error');
+  await deployContract('MCopy', 'mcopy');
+  await deployContract('TransientStorage', 'transient_storage');
 }
 
 // We recommend this pattern to be able to use async/await everywhere
