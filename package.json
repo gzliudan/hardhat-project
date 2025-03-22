@@ -29,6 +29,7 @@
     "yarn": ">=1.22.0"
   },
   "devDependencies": {
+    "dayjs": "^1.11.13",
     "dotenv": "^16.4.7",
     "eslint": "^9.23.0",
     "eslint-config-prettier": "^10.1.1",
