@@ -31,7 +31,7 @@ yarn test:xdcdev
 yarn test:apothem
 
 # for XDC mainet
-test:xinfin
+yarn test:xinfin
 ```
 
 ## Deploy
